@@ -16,4 +16,4 @@ This ROS 2 package implements a simple Battery Monitor Node that subscribes to t
 1. Clone this package into your ROS 2 workspace (e.g., `create3_ws/src`):
 
    ```bash
-   git clone <url-to-dock_package.git> create3_ws/src/dock_package
+   git clone https://github.com/mmsaban/robot_kojac.git create3_ws/src/dock_package
