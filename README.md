@@ -17,3 +17,14 @@ This ROS 2 package implements a simple Battery Monitor Node that subscribes to t
 
    ```bash
    git clone https://github.com/mmsaban/robot_kojac.git create3_ws/src/dock_package
+
+2.
+   ```bash
+   cd create3_ws
+   colcon build
+
+## Usage
+1. ros2 run dock_package dock_bat.py
+   
+The Battery Monitor Node will subscribe to the   `/battery_state` topic and trigger the action to dock the robot when the battery percentage falls below the specified threshold.
+   
