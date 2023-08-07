@@ -20,7 +20,7 @@ class BatteryMonitorNode(Node):
     def battery_callback(self, msg):
         # Check the battery percentage and trigger action if too low
         self.publish_status(msg.percentage, '  ')
-        if msg.percentage < 0.9991:
+        if msg.percentage < 0.10:   #docking when battery percentage is below 10%
 #            Dock()
             self.publish_status(msg.percentage, '  is lower and needs to dock')
             self.send_dock_goal()
